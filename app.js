@@ -13,3 +13,5 @@ let bmi = svorisKg / ugisCmKv * daugiklis
 console.log(bmi);
 
 alert(`Jusu BMI yra ${bmi}`);
+
+//Komentaras
