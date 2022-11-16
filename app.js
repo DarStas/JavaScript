@@ -25,23 +25,23 @@ const activityLevel = Number(prompt("Jūsų aktyvumo lygis (0, 1, 2, 3, 4)"));
 let BMR;
 
 if (gender == "vyras") {
-    BMR = (66.5 + (13.75 * weight) + (5.003 * height) - (6.75 * age));
-    console.log("vyras");
-}else {
-    BMR = (655.1 + (9.563 * weight) + (1.850 * height) - (4.676 * age));
-    console.log("moteris");
+  BMR = 66.5 + 13.75 * weight + 5.003 * height - 6.75 * age;
+  console.log("vyras");
+} else {
+  BMR = 655.1 + 9.563 * weight + 1.85 * height - 4.676 * age;
+  console.log("moteris");
 }
 
 console.log(BMR);
 
 if (activityLevel === 0) {
-    alert(BMR * 1.2);
+  alert(BMR * 1.2);
 } else if (activityLevel === 1) {
-    alert(BMR * 1.375);
+  alert(BMR * 1.375);
 } else if (activityLevel === 2) {
-    alert(BMR * 1.55);
-}  else if (activityLevel === 3) {
-    alert(BMR * 1.725);
+  alert(BMR * 1.55);
+} else if (activityLevel === 3) {
+  alert(BMR * 1.725);
 } else {
-    alert(BMR * 1.9);
+  alert(BMR * 1.9);
 }
