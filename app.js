@@ -1,38 +1,13 @@
-const definiteBudget = prompt("Definite budget? (yes/no)");
+// const cssSelector = "#some-element";
+// const element = document.querySelector(cssSelector);
 
-if (definiteBudget === "yes") {
-  console.log(definiteBudget);
-  const knowChampion = prompt("Known champion for it? (yes/no)");
-  if (knowChampion === "yes") {
-    console.log(knowChampion);
-    const clearScope = prompt("Clear project Scope? (yes/no)");
-    if (clearScope === "yes") {
-      console.log(clearScope);
-      const achievableTimescale = prompt("Achievable Timescalale? (yes/no)");
-      if (achievableTimescale === "yes") {
-        console.log(achievableTimescale);
-        alert("Go for it");
-      } else {
-        alert("Get more time");
-      }
-    } else {
-      const happyProfit = prompt("Happy to profit? (yes/no)");
-      if (happyProfit === "yes") {
-        console.log(happyProfit);
-        alert("Cash In");
-      } else {
-        alert("Explain why it matters");
-      }
-    }
-  } else {
-    alert("Leave it alone");
-  }
-} else {
-  const alternativeFunding = prompt("Alternative funding? (yes/no)");
-  if (alternativeFunding === "yes") {
-    console.log(alternativeFunding);
-    alert("Sort out funding");
-  } else {
-    alert("Leave it alone");
-  }
-}
+// element.className = "element-style";
+// element.className += " active";
+// console.log(element.className);
+
+const heading = document.querySelector("#my-element > h1");
+
+// heading.className stringas su klasem
+// heading.innerText stringas su tekstu tarp <el> </el>
+heading.innerText = "Įvyko klaida!!!!"
+console.log(heading.innerText);
