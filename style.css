@@ -1,16 +1,17 @@
-/* #some-element {
-
+#dropdown {
+  position: relative;
 }
 
-.element-style {
-    color: red;
-    display: none;
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: grey;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
 }
 
-.element-style.active {
-    display: block;
-} */
-
-/* #my-element > h1 {
-
-} */
+.dropdown-menu.active {
+  display: block;
+}
