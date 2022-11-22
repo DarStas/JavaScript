@@ -1,29 +1,24 @@
-// const button = document.querySelector("#my-button");
+// Nerodom "accordeon-content" turinio
+//paspaudus ant "accordeon-header"
+// turi pasimatyti musu "accordeon-content"
 
-// let i = 0;
+// "accordeon-content" yra matomas
+// paspaudus ant "accordeon-header"
+// "accordeon-content" turi pasislepti
 
-// function myFunction() {
-//   i++ // i = i + 1
-//   button.innerText = i;
-// }
+const ACCORDEON = "accordeon-content";
+const ACCORDEON_HIDDEN = "accordeon-content hidden";
 
-const DROPDOWN_ACTIVE = "dropdown-menu active";
-const DROPDOWN_HIDDEN = "dropdown-menu";
+const accordeonContentElement = document.querySelector(
+  "#accordeon .accordeon-content"
+);
 
-const dropdownElement = document.querySelector(`#dropdown .${DROPDOWN_HIDDEN}`);
-
-/**
- * atvejis 1:
- * jeigu dropdown-menu yra active, tai jis turi issijungti
- * 
- * atvejis 2:
- * jei dropdown-menu nera active, tai jis turi isijungti
- */
-
-function toggle() {
-  if (dropdownElement.className === DROPDOWN_ACTIVE) {
-    dropdownElement.className = DROPDOWN_HIDDEN;
+function toggleAccordeon() {
+  const isAccordeonContentHidden =
+    accordeonContentElement.className === ACCORDEON_HIDDEN;
+  if (isAccordeonContentHidden) {
+    accordeonContentElement.className = ACCORDEON;
   } else {
-    dropdownElement.className = DROPDOWN_ACTIVE;
+    accordeonContentElement.className = ACCORDEON_HIDDEN;
   }
 }
