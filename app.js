@@ -1,24 +1,51 @@
-// Nerodom "accordeon-content" turinio
-//paspaudus ant "accordeon-header"
-// turi pasimatyti musu "accordeon-content"
+// console.log - debugging
+// kintamieji
+// let ir const deklaravimas
+// naršyklės funkcijos
+// prompt, alert
+// duomenų tipai
+// string, number, boolean, null, undefined
+// tipų tikrinimas typeof
+// operatoriai
+// ===, +, -, *, /, >, <, **, !==, >=, <=, %
+// if () {},  else if () {}, else {}
+// function () {}
+// funkcija pasiimti elementą
+// const element = document.querySelector(".query")
+// elemento parametrai
+// element.innerText
+// element.className
 
-// "accordeon-content" yra matomas
-// paspaudus ant "accordeon-header"
-// "accordeon-content" turi pasislepti
+// 1. užduotis
 
-const ACCORDEON = "accordeon-content";
-const ACCORDEON_HIDDEN = "accordeon-content hidden";
 
-const accordeonContentElement = document.querySelector(
-  "#accordeon .accordeon-content"
-);
 
-function toggleAccordeon() {
-  const isAccordeonContentHidden =
-    accordeonContentElement.className === ACCORDEON_HIDDEN;
-  if (isAccordeonContentHidden) {
-    accordeonContentElement.className = ACCORDEON;
+// :root {
+//   --modeColor: "#fff"
+// }
+
+// .test {
+//   color: var {}
+// }
+
+const bodyElement = document.querySelector("body");
+
+function changeMode() {
+  if (bodyElement.className === "light") {
+    bodyElement.className = "dark";
   } else {
-    accordeonContentElement.className = ACCORDEON_HIDDEN;
+    bodyElement.className = "light";
   }
 }
+
+
+
+
+// 1. salyga - jeigu šviesus fonas, tada fonas pasikeičia į tamsų
+// šviesus fonas yra class="light"
+// Kad pasikeistų į tamsų body klasė turi pasikeisti į class="dark"
+
+// 2. sąlyga - jeigu tamsus fonas, pasikeičia į šviesų
+// tamsus fonas yra class="dark"
+// Kad pasikeistų į šviesų body klasė turi pasikeisti į class="light"
+

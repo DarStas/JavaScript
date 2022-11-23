@@ -1,3 +1,36 @@
-.accordeon-content.hidden {
-    display: none;
+/* html {
+    --modeColor: blue;
+    --spaceSmall: 0.5rem;
+    --spaceBig: 1rem;
+} */
+
+/*
+Kad galetume naudoti var(), elementas t
+*/
+
+/* .test {
+    color: var(--modeColor);
+}
+
+test3 {
+    background-color: var(--modeColor);
+} */
+
+body.light {
+    --color: #000;
+    --bgColor: #fff;
+    background-color: white;
+}
+
+body.dark {
+    --color: #fff;
+    --bgColor: #000;
+    background-color: black;
+}
+
+p,
+h1,
+h2 {
+    color: var(--color);
+    background-color: var(--bgColor);
 }
